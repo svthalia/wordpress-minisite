@@ -1,6 +1,6 @@
 FROM php:7.2-fpm
 
-# Based on https://github.com/docker-library/wordpress/blob/master/php7.2/fpm/Dockerfile
+# Based on https://github.com/docker-library/wordpress/blob/875fcd986dbb97fb80ce7b88f2dd9f94d5173f6d/php7.2/fpm/Dockerfile
 
 # install the PHP extensions we need
 RUN set -ex; \
