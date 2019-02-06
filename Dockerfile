@@ -1,4 +1,4 @@
-FROM php:7.2-fpm
+FROM php:7-fpm
 
 # Based on https://github.com/docker-library/wordpress/blob/875fcd986dbb97fb80ce7b88f2dd9f94d5173f6d/php7.2/fpm/Dockerfile
 
@@ -11,6 +11,7 @@ RUN set -ex; \
 	apt-get install -y --no-install-recommends \
 		libjpeg-dev \
 		libpng-dev \
+                libzip-dev \
 	; \
 	\
 	docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
